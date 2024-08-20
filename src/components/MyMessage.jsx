@@ -5,7 +5,11 @@ const MyMessage = ({ message }) => {
         src={message.attachments[0].file}
         alt="message-attachment"
         className="message-image"
-        style={{ float: "right" }}
+        style={{
+          float: "right",
+          color: "#e7ecef",
+          backgroundColor: "#6096ba",
+        }}
       />
     );
   }
@@ -16,8 +20,8 @@ const MyMessage = ({ message }) => {
       style={{
         float: "right",
         marginRight: "18px",
-        color: "##e7ecef",
-        backgroundColor: "##6096ba",
+        color: "#e7ecef",
+        backgroundColor: "#6096ba",
       }}
     >
       {message.text}
